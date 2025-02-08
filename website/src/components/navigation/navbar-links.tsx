@@ -33,9 +33,9 @@ export const NavbarLinks = (props: Props) => {
   return (
     <HStack gap="6" me="2">
       <NextLink
-        href={`/react/docs/overview/introduction`}
+        href={'/react/docs/overview/introduction'}
         className={link}
-        aria-current={pathname.startsWith(`/react/docs`) ? 'page' : undefined}
+        aria-current={pathname.startsWith('/react/docs') ? 'page' : undefined}
       >
         Docs
       </NextLink>

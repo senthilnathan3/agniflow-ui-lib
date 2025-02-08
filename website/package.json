@@ -5,7 +5,7 @@
   "sideEffects": false,
   "scripts": {
     "prepare": "panda codegen && prisma generate",
-    "dev": "next dev -p 3333",
+    "dev": "next dev -p 3000",
     "lint": "biome lint ./src",
     "build": "next build",
     "start": "next start",
