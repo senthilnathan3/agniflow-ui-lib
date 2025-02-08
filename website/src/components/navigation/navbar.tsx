@@ -9,7 +9,7 @@ import { MobileNavbarLinks } from '~/components/navigation/mobile-navbar-links'
 import { NavbarContainer } from '~/components/navigation/navbar-container'
 import { NavbarLinks } from '~/components/navigation/navbar-links'
 import { getServerContext } from '~/lib/server-context'
-import { UserButton } from '../auth/user-button'
+// import { UserButton } from '../auth/user-button'
 import { ThemeDrawer } from '../theming/theme-drawer'
 
 export const Navbar = () => {
@@ -29,7 +29,7 @@ export const Navbar = () => {
               <ThemeDrawer />
               <ColorModeButton />
             </HStack>
-            <UserButton />
+            {/* <UserButton /> */}
           </HStack>
         </HStack>
         <HStack gap="3" py="0.5" display={{ base: 'flex', md: 'none' }}>

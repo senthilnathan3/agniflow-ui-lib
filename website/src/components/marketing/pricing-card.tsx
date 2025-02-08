@@ -10,7 +10,7 @@ import { Button } from '~/components/ui/button'
 import { Card } from '~/components/ui/card'
 import { Icon } from '~/components/ui/icon'
 import { Text } from '~/components/ui/text'
-import { SignInLink } from '../auth/sign-in-link'
+// import { SignInLink } from '../auth/sign-in-link'
 
 type Props = {
   variant: 'personal' | 'team'
@@ -45,7 +45,7 @@ export const PricingCard = (props: Props) => {
             <a href={license.checkoutUrl}>Buy Now</a>
           </Button>
           <Text color="fg.muted" textStyle="sm">
-            Already purchased? <SignInLink />
+            {/* Already purchased? <SignInLink /> */}
           </Text>
         </Stack>
         <Stack gap="6">
