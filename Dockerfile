@@ -8,10 +8,10 @@ ENV SKIP_HOOKS=true
 
 RUN bun install
 
+RUN bun add next velite rehype-autolink-headings rehype-slug
+
 COPY . .
 
 EXPOSE 3333 6006
-
-RUN bun web build
 
 CMD ["sh", "-c", "bun web start"]
