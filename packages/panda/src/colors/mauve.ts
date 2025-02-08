@@ -1,4 +1,4 @@
-import { defineSemanticTokens, defineTokens } from '@pandacss/dev'
+import { defineTokens, defineSemanticTokens } from '@pandacss/dev'
 
 const tokens = defineTokens.colors({
   light: {
@@ -82,7 +82,7 @@ const semanticTokens = defineSemanticTokens.colors({
   default: { value: { _light: '{colors.mauve.light.9}', _dark: '{colors.mauve.dark.9}' } },
   emphasized: { value: { _light: '{colors.mauve.light.10}', _dark: '{colors.mauve.dark.10}' } },
   fg: { value: { _light: 'white', _dark: 'white' } },
-  text: { value: { _light: '{colors.mauve.light.12}', _dark: '{colors.mauve.dark.12}' } },
+  text: { value: { _light: '{colors.mauve.light.a11}', _dark: '{colors.mauve.dark.a11}' } },
 })
 
 export default {

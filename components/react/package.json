@@ -7,8 +7,10 @@
     "dev": "bun run storybook",
     "lint": "biome lint ./src",
     "storybook": "storybook dev -p 6006",
+    "storybook:ci": "storybook dev -p 6006 --ci",
     "typecheck": "tsc"
   },
+  "packageManager": "bun@1.1.38",
   "dependencies": {
     "@ark-ui/react": "4.4.4",
     "@pandacss/dev": "0.48.0",

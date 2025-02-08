@@ -103,7 +103,7 @@ const main = async () => {
             spinner.stop('An error occurred')
             p.note(error, 'Error Details')
             p.outro(
-              `You can report this issue `,
+              'You can report this issue',
             )
           })
       },

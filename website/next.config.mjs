@@ -6,8 +6,6 @@ const nextConfig = {
   outputFileTracingIncludes: {
     '/*': [
       '../components/react/src/demos/*',
-      '../components/solid/src/demos/*',
-      '../components/vue/src/demos/*',
       '../packages/panda/src/theme/recipes/*',
     ],
   },

@@ -28,15 +28,15 @@ export const BlockPlayground = async (props: Props) => {
   const { block, variant } = props
   const { framework } = getServerContext()
 
-  const Block = dynamic(() =>
-    import(`~/components/blocks/${block.id}/${variant.id}/example`)
-      .then((mod) => ({
-        default: mod.Example,
-      }))
-      .catch(() => ({
-        default: NotFound,
-      })),
-  )
+  // const Block = dynamic(() =>
+  //   import(`~/components/blocks/${block.id}/${variant.id}/example`)
+  //     .then((mod) => ({
+  //       default: mod.Example,
+  //     }))
+  //     .catch(() => ({
+  //       default: NotFound,
+  //     })),
+  // )
 
   const hasAccessToSourceCode = variant.accessLevel === 'free' || (await hasUserPermission())
   const sourceFiles = hasAccessToSourceCode
@@ -90,7 +90,7 @@ export const BlockPlayground = async (props: Props) => {
       </HStack>
       <Tabs.Content value="preview" px="!0">
         <ResizableIFrame>
-          <Block />
+          {/* <Block /> */}
         </ResizableIFrame>
       </Tabs.Content>
       <Tabs.Content value="code" px="!0">
